@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dash Groceries</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Order Online</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="image-holder">
+      <img
+        class="background-image"
+        src="images/grocery store.jpg"
+        alt=""
+        width="100%"
+      />
+      <h1 class="caption-1">GROCERY SHOPPING DONE ONLINE</h1>
+    </div>
+
+    <h1 class="pop-cat">POPULAR CATEGORIES</h1>
+    <hr width="1300" />
+
+    <div class="featured-wrapper">
+      <!-- This is the dairy category -->
+      <div class="product-container">
+        <p class="cat-text">Dairy Products</p>
+        <img class="food-image" src="images/dairy products.jpg" alt="" />
+        <div class="btn-container">
+          <button class="view-more-btn" type="button" name="button">
+            VIEW MORE
+          </button>
+        </div>
+      </div>
+      <!-- This is the meats category -->
+      <div class="product-container">
+        <p class="cat-text">Cold Meats</p>
+        <img class="food-image" src="images/cold meats 2.jpg" alt="" />
+        <div class="btn-container">
+          <button class="view-more-btn" type="button" name="button">
+            VIEW MORE
+          </button>
+        </div>
+      </div>
+      <!-- This is the fruits and veggies category -->
+      <div class="product-container">
+        <p class="cat-text">Fruits and Veggies</p>
+        <img class="food-image" src="images/fruits and veggies.webp" alt="" />
+        <div class="btn-container">
+          <button class="view-more-btn" type="button" name="button">
+            VIEW MORE
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- This is the social media section -->
+    <div class="social-media-container">
+      <div id="facebook-icon-container">
+        <img src="images/facebook icon.webp" alt="" />
+      </div>
+      <div id="twitter-icon-container">
+        <img src="images/twitter icon.webp" alt="" />
+      </div>
+      <div id="instagram-icon-container">
+        <img src="images/Instagram.webp" alt="" />
+      </div>
+    </div>
+
+    <br />
+
+    <!-- This is the form container -->
+    <div class="form-container">
+      <div class="form-head-container">
+        <img id="email-form" src="images/email icon.png" alt="" />
+        <p id="contact-us-label">Contact Us</p>
+      </div>
+
+      <form action="">
+        <label class="form-item" for="fname">First Name</label>
+        <input
+          type="text"
+          id="frame"
+          name="firstname"
+          placeholder="First Name"
+        />
+        <br /><br />
+
+        <label class="form-item" for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Last Name" />
+        <br /><br />
+
+        <label class="form-item" for="subject">Email</label>
+        <textarea
+          name="subject"
+          id="subject"
+          cols="30"
+          rows="10"
+          placeholder="How can we help?"
+        ></textarea>
+        <br /><br />
+
+        <input type="submit" id="submit-btn" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

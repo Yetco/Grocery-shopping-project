@@ -1,0 +1,329 @@
+/*
+      1. Use a more-intuitive box-sizing model.
+    */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+                  2. Remove default margin
+                */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+                  Typographic tweaks!
+                  3. Add accessible line-height
+                  4. Improve text rendering
+                */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+                  5. Improve media defaults
+                */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+                  6. Remove built-in form typography styles
+                */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+                  7. Avoid text overflows
+                */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+                  8. Create a root stacking context
+                */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.nav-wrapper {
+  background-color: green;
+  padding: 10px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline;
+  margin: 0px;
+  font-size: 1.5rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: 1.5s;
+}
+
+.nav-list li a:hover {
+  background-color: darkorange;
+}
+
+.nav-list li a:active {
+  background-color: chartreuse;
+}
+
+.nav-list li a:visited {
+  background-color: darkviolet;
+}
+
+.nav-item {
+  color: aliceblue;
+}
+
+.form-container {
+  background-color: #232323;
+  width: 330px;
+  position: fixed;
+  right: 0;
+  bottom: -300px;
+  transition: 0.5s;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.form-container:hover {
+  bottom: 0;
+}
+
+#email-form {
+  width: 50px;
+  float: left;
+  margin-right: 15px;
+  margin-top: -15px;
+}
+
+.form-head-container {
+  background-color: black;
+  padding: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.form-item {
+  margin-left: 15px;
+  color: white;
+  padding-left: 8px;
+}
+
+#subject {
+  height: 100px;
+  width: 200px;
+}
+
+#contact-us-label {
+  color: white;
+}
+
+#submit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  margin: 9px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#submit-btn:hover {
+  background-color: darkorange;
+}
+
+.caption-1 {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  color: white;
+  font-size: 2.5rem;
+  animation-name: caption-fade;
+  animation-duration: 3s;
+}
+
+@keyframes caption-fade {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+.featured-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: auto;
+  /* overflow: hidden; */
+}
+
+.food-image {
+  max-width: 100%;
+  position: relative;
+  top: 36px;
+}
+
+.pop-cat {
+  text-align: center;
+}
+
+.product-container {
+  background-color: #4caf50;
+  text-align: center;
+  max-width: 20%;
+  position: relative;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #4caf50;
+  margin-top: 8px;
+  animation-name: product-container-anim;
+  animation-duration: 2s;
+}
+
+@keyframes product-container-anim {
+  0% {
+    opacity: 0;
+    margin-top: 500px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 8px;
+  }
+}
+
+.cat-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: -5%;
+}
+
+.btn-container {
+  background-color: white;
+  position: relative;
+  top: 1;
+  padding: 7%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.view-more-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  max-width: 100%;
+  padding: 7px 12px;
+  margin: 9px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-more-btn:hover {
+  background-color: darkorange;
+}
+
+.social-media-container {
+  background-color: black;
+  position: fixed;
+  display: inline-block;
+  right: 0;
+  bottom: 50%;
+}
+
+.social-media-container:hover {
+  cursor: pointer;
+}
+
+.social-media-container img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+#facebook-icon-container {
+  background-color: #3b5998;
+  transition: 0.5s;
+}
+
+#facebook-icon-container:hover {
+  padding-left: 20px;
+}
+
+#twitter-icon-container {
+  background-color: #00acee;
+  transition: 0.5s;
+}
+
+#twitter-icon-container:hover {
+  padding-left: 20px;
+}
+
+#instagram-icon-container {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  transition: 0.5s;
+}
+
+#instagram-icon-container:hover {
+  padding-left: 20px;
+}
